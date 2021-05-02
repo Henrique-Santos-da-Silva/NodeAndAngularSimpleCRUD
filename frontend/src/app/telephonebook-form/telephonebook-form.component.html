@@ -1,0 +1,21 @@
+<form [formGroup]="formulario">
+  <div class="mb-3">
+    <label for="firstName" class="form-label">Name</label>
+    <input type="text" class="form-control" id="firstName" formControlName="name">
+  </div>
+  <div class="mb-3">
+    <label for="email" class="form-label">Email</label>
+    <input type="email" class="form-control" id="email" formControlName="email">
+  </div>
+  <div class="mb-3">
+    <label for="phone" class="form-label">Telephone</label>
+    <input type="text" class="form-control" id="phone" formControlName="telephone">
+  </div>
+
+  <div class="mt-3 d-grid gap-2 d-md-flex justify-content-md-end">
+    <button type="button" class="btn btn-light mr-2" (click)="onBackPage()">Voltar</button>
+    <button type="button" class="btn btn-danger mr-2" (click)="onReset()">Cancelar</button>
+    <button type="button" class="btn btn-primary" (click)="onSubmit()">Salvar</button>
+  </div>
+
+</form>

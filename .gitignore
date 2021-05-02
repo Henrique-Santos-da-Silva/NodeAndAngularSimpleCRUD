@@ -1,0 +1,6 @@
+rest-api/node_modules
+
+rest-api/src/database/database.sqlite
+
+frontend/.idea
+frontend/node_modules
